@@ -1,0 +1,79 @@
+{
+  "Employees": [
+    {
+      "id": 2018201101,
+      "profilepicpath": "./assets/profiles/Amber_Richi.jpg",
+      "name": "Amber Richi",
+      "category": "Front-End",
+      "address": "CLub row, Wind square, L-52548",
+      "doj": "2012-03-15",
+      "skills": "Html, Css, Javascript, Node"
+    },
+    {
+      "id": 2018201102,
+      "name": "Ruchika Paliwal",
+      "address": "Hadapser, Pune-412574",
+      "profilepicpath": "./assets/profiles/Ruchika_Paliwal.jpg",
+      "category": "Office",
+      "doj": "2012-03-11",
+      "skills": [
+        "Excel, MS-Office, Powerpoint, DOS"
+      ]
+    },
+    {
+      "id": 2018201103,
+      "name": "Mohammad Siddique",
+      "address": "Mahamadwadi, Pune",
+      "profilepicpath": "./assets/profiles/Mohammad_Siddique.jpg",
+      "category": "Front-End",
+      "doj": "2017-11-05",
+      "skills": [
+        "Html, share-point, .Net, EDIN"
+      ]
+    },
+    {
+      "id": 2018201104,
+      "profilepicpath": "./assets/profiles/Rajib_Ganguly.jpg",
+      "name": "Rajib Ganguly",
+      "category": "Database",
+      "address": "Sai sankul, phursungi, Bhekraonagar",
+      "doj": "2111-11-11",
+      "skills": [
+        "Skala, cobol"
+      ]
+    },
+    {
+      "id": 2018201105,
+      "profilepicpath": "./assets/profiles/Johan_Augestine.jpg",
+      "name": "Johan Augestine",
+      "category": "Front-End",
+      "address": "Tripti-Nilay, C/o A.K.Bhattacharya,, East Rabindra palli, Wireless gate",
+      "doj": "2014-12-12",
+      "skills": [
+        "React JS, HTML5, CSS3, GIT, NodeJS"
+      ]
+    },
+    {
+      "id": 2018201106,
+      "name": "Fionna Appudas",
+      "category": "Back-End",
+      "address": "Barasaat Road",
+      "skills": [
+        "Python, Java, .Net"
+      ],
+      "profilepicpath": "./assets/profiles/Fionna_Appudas.jpg",
+      "doj": "2111-12-11"
+    },
+    {
+      "id": 2018201108,
+      "name": "Dora Braitley",
+      "category": "Agile",
+      "address": "Mousetong hills, coper blog 1, Dedur, Chadigarh",
+      "skills": [
+        "Scrum certified, TCM"
+      ],
+      "profilepicpath": "./assets/profiles/Dora_Braitley.jpg",
+      "doj": "2011-12-22"
+    }
+  ]
+}

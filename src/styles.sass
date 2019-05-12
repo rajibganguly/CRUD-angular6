@@ -1,0 +1,50 @@
+@import "./../node_modules/bootstrap/scss/bootstrap";
+
+$model-bg: #70ACDA
+$white: #FFFFFF
+
+body
+  background: darken($white, 5%)
+  .container
+    background: $white
+    table
+      width: 1245px
+  .container-fluid
+    background: $white
+  .navbar-dark
+    background: $model-bg
+  .scrolled-table
+    width: 100%
+    overflow: scroll
+  .comma
+    span
+      text-transform: capitalize
+    span:after
+      content: '/'
+      margin-right: 3px
+      text-transform: uppercase
+    span:last-child:after
+      content: ''
+  table.start-cap
+    tbody
+      tr
+        td
+          text-transform:capitalize !important
+  .rg-modal
+    background: darken($model-bg, 5%)
+    color: $white
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    padding: 10px
+    overflow-y: scroll
+    width: 100%
+    overflow-x: hidden
+    table
+      td
+        padding: 4px
+
+
+

@@ -1,0 +1,72 @@
+<h1 class="display-4 text-info">Employees Details</h1>
+<div class="scrolled-table">
+    <table class="table table-borderless table-hover start-cap">
+        <tr>
+          <th>Comp. ID</th>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Skills</th>
+          <th>Date of Join</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        <tr *ngFor="let x of employeeLists">
+          <td>{{x.id}}</td>
+          <td><img [src]="x.profilepicpath" alt="name" style="height:50px" class="rounded-circle"></td>
+          <td>
+            <strong>{{x.name}}</strong><br/>
+            <small>{{x.address}}</small>
+          </td>
+          <td>{{x.category}}</td>
+          <td class="comma">{{x.skills}}</td>
+          <td>{{x.doj}}</td>
+          <td><button class="btn btn-outline-dark" (click)="editEmployee(x)">Edit</button></td>
+          <td><button class="btn btn-outline-danger" (click)="deleteEmployee(x.id)">Delete</button></td>
+        </tr>
+      </table>
+</div>
+
+<!-- POP UP WINDOW -->
+<div *ngIf="addressInput" class="rg-modal">
+  <form #editEmployeeForm="ngForm" (ngSubmit)="saveEmployee(editEmployeeForm)">
+  <table *ngFor="let x of employeeEditLists">
+    <tr>
+      <td class="text-right"><strong>Comp ID:</strong></td>
+      <td class="text-left" [(ngModel)]="x.id" name="id" id="id">{{x.id}}</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <img [src]="x.profilepicpath" [(ngModel)]="x.profilepicpath" name="profilepicpath" class="img-thumbnail" alt="name" style="width:200px">
+      </td>
+    </tr>
+    <tr>
+      <td class="text-right"><strong>Name:</strong></td>
+      <td class="text-left" [(ngModel)]="x.name" name="name">{{x.name}}</td>
+    </tr>
+    <tr>
+      <td class="text-right"><strong>Category:</strong></td>
+      <td class="text-left" [(ngModel)]="x.category" name="category">{{x.category}}</td>
+    </tr>
+    <tr>
+      <td class="text-right"><strong>Address:</strong></td>
+      <td class="text-left"><input type="text" [(ngModel)]="x.address" name="address" class="form-control" /></td>
+    </tr>
+    <tr>
+      <td class="text-right"><strong>Date of join:</strong></td>
+      <td class="text-left" [(ngModel)]="x.doj" name="doj">{{x.doj}}</td>
+    </tr>
+    <tr>
+      <td class="text-right"><strong>Skills:</strong></td>
+      <td class="text-left"><textarea class="form-control" [(ngModel)]="x.skills" name="skills"></textarea></td>
+    </tr>
+    <tr>
+    <td class="text-right"></td>
+      <td class="text-left">
+        <button class="btn btn-outline-light mr-1" type="submit">save</button>
+        <button class="btn btn-outline-warning" (click)="returnToHome()">Back</button>
+      </td>
+    </tr>
+  </table>
+</form>
+</div>
