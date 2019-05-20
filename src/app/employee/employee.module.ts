@@ -6,3 +6,9 @@ export class Employee {
   profilepicpath: string;
   doj: string;
 }
+
+export interface EmployeeHints {
+  skills: string;
+  name: string;
+  profilepicpath: string;
+}

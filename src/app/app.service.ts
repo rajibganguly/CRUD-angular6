@@ -12,6 +12,7 @@ export class AppService {
   constructor(private httpClient: HttpClient) {}
   dataServerUrl = 'http://localhost:3004/Employees';
 
+
   getEmployee(): Observable<Employee[]> {
     return this.httpClient.get<Employee[]>(this.dataServerUrl);
   }
@@ -45,5 +46,8 @@ export class AppService {
          })
        })
    }
+
+
+
 
 }

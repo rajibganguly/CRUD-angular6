@@ -5,9 +5,25 @@
       "profilepicpath": "./assets/profiles/Amber_Richi.jpg",
       "name": "Amber Richi",
       "category": "Front-End",
-      "address": "CLub row, Wind square, L-52548",
+	    "address": "CLub row, Wind square, L-52548",
       "doj": "2012-03-15",
-      "skills": "Html, Css, Javascript, Node"
+      "skills": "Html, Css, Javascript, Node",
+	  "locations": [
+		{
+			"lacation": "Kharadi, Pune, India",
+			"project": "NDB_Parkinsons",
+			"projectcode": "154587854NDR",
+			"startdate": "2015-03-22",
+			"enddate": "2015-06-22"
+		},
+		{
+			"lacation": "Magarpatta, Pune, India",
+			"project": "CITI_BANK_RBI",
+			"projectcode": "00547CITIB",
+			"startdate": "2015-06-28",
+			"enddate": "2015-12-31"
+		}
+	  ]
     },
     {
       "id": 2018201102,
@@ -15,10 +31,17 @@
       "address": "Hadapser, Pune-412574",
       "profilepicpath": "./assets/profiles/Ruchika_Paliwal.jpg",
       "category": "Office",
-      "doj": "2012-03-11",
-      "skills": [
-        "Excel, MS-Office, Powerpoint, DOS"
-      ]
+	  "doj": "2012-03-11",
+      "skills": "Excel, MS-Office, Powerpoint, DOS",
+      "locations": [
+		{
+			"lacation": "San Jose, CA, USA",
+			"project": "LINK_LON",
+			"projectcode": "585YYL",
+			"startdate": "2018-03-22",
+			"enddate": "2019-09-31"
+		}
+	  ]
     },
     {
       "id": 2018201103,
@@ -27,9 +50,7 @@
       "profilepicpath": "./assets/profiles/Mohammad_Siddique.jpg",
       "category": "Front-End",
       "doj": "2017-11-05",
-      "skills": [
-        "Html, share-point, .Net, EDIN"
-      ]
+      "skills": "Html, share-point, .Net, EDIN"
     },
     {
       "id": 2018201104,
@@ -49,18 +70,14 @@
       "category": "Front-End",
       "address": "Tripti-Nilay, C/o A.K.Bhattacharya,, East Rabindra palli, Wireless gate",
       "doj": "2014-12-12",
-      "skills": [
-        "React JS, HTML5, CSS3, GIT, NodeJS"
-      ]
+      "skills": "React JS, HTML5, CSS3, GIT, NodeJS"
     },
     {
       "id": 2018201106,
       "name": "Fionna Appudas",
       "category": "Back-End",
       "address": "Barasaat Road",
-      "skills": [
-        "Python, Java, .Net"
-      ],
+      "skills": "Python, Java, .Net",
       "profilepicpath": "./assets/profiles/Fionna_Appudas.jpg",
       "doj": "2111-12-11"
     },
@@ -69,9 +86,7 @@
       "name": "Dora Braitley",
       "category": "Agile",
       "address": "Mousetong hills, coper blog 1, Dedur, Chadigarh",
-      "skills": [
-        "Scrum certified, TCM"
-      ],
+      "skills": "Scrum certified, TCM",
       "profilepicpath": "./assets/profiles/Dora_Braitley.jpg",
       "doj": "2011-12-22"
     }
