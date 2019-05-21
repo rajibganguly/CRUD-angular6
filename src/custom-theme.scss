@@ -29,3 +29,14 @@ $crudapp-theme: mat-light-theme($crudapp-primary, $crudapp-accent, $crudapp-warn
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.current-loc {
+  li:last-child {
+    &:before {
+      content: 'Currently ';
+      font-weight: bold;
+    }
+    small {
+      background: lightblue;
+    }
+  }
+}

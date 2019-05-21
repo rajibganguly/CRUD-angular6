@@ -16,6 +16,7 @@ export class SearchComponent implements OnInit {
   stateCtrl = new FormControl();
   filteredStates: Observable<EmployeeHints[]>;
   states: EmployeeHints[] = [];
+  searchResults = [];
 
   constructor(
     private service: AppService
@@ -31,6 +32,13 @@ export class SearchComponent implements OnInit {
   private _filterStates(value: string): EmployeeHints[] {
     const filterValue = value.toLowerCase();
     console.log(filterValue);
+    this.searchResults = [];
+    this.states.filter(data => {
+      if(data.name.toLowerCase() === filterValue) {
+        this.searchResults.push(data);
+        console.log(data);
+      }
+    });
     return this.states.filter(data => data.name.toLowerCase().indexOf(filterValue) === 0);
   }
 

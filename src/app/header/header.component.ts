@@ -20,6 +20,10 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/newEmployee']);
   }
 
+  searchEmployee() {
+    this.router.navigate(['/search']);
+  }
+
 
 
 }

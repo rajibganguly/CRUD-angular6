@@ -8,6 +8,7 @@ export class Employee {
 }
 
 export interface EmployeeHints {
+  id: number,
   skills: string;
   name: string;
   profilepicpath: string;

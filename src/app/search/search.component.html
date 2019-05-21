@@ -13,5 +13,27 @@
         </mat-autocomplete>
       </mat-form-field>
     </form>
+
+    <table class="table table-borderless table-hover start-cap" *ngIf="searchResults && searchResults.length > 0">
+      <tr>
+        <th>Image</th>
+        <th>Name & Address</th>
+        <th>Date of Join & Skills</th>
+        <th>Location Records</th>
+      </tr>
+      <tr *ngFor="let x of searchResults">
+        <td><img [src]="x.profilepicpath" alt="name" style="height:50px" class="rounded-circle"></td>
+        <td>
+          <strong>{{x.name}}</strong><br/>
+          <small>{{x.address}}</small>
+        </td>
+        <td>{{x.doj}} <br>{{x.skills}}</td>
+        <td>
+            <ol class="current-loc">
+              <li *ngFor="let loc of x.locations"><small><strong>{{loc.project}}</strong> | {{loc.lacation}} | Start: {{loc.startdate}} | End: {{loc.enddate}}</small></li>
+            </ol>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>
