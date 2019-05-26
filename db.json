@@ -2,10 +2,10 @@
   "Employees": [
     {
       "id": 2018201101,
-      "profilepicpath": "./assets/profiles/Amber_Richi.jpg",
+      "profilepicpath": "Amber_Richi.jpg",
       "name": "Amber Richi",
       "category": "Front-End",
-      "address": "CLub row, Wind square, L-52548",
+      "address": "CLub row, Wind square, L-52548, London",
       "doj": "2012-03-15",
       "skills": "Html, Css, Javascript, Node",
       "locations": [
@@ -28,18 +28,25 @@
     {
       "id": 2018201102,
       "name": "Ruchika Paliwal",
-      "address": "Hadapser, Pune-412574",
-      "profilepicpath": "./assets/profiles/Ruchika_Paliwal.jpg",
+      "profilepicpath": "Ruchika_Paliwal.jpg",
       "category": "Office",
+      "address": "Magarpatta, Pune-412574",
       "doj": "2012-03-11",
-      "skills": "Excel, MS-Office, Powerpoint, DOS",
+      "skills": "Excel, MS-Office, Powerpoint, DOSX",
       "locations": [
         {
-          "lacation": "San Jose, CA, USA",
-          "project": "LINK_LON",
-          "projectcode": "585YYL",
-          "startdate": "2018-03-22",
-          "enddate": "2019-09-31"
+          "lacation": "Kharadi, Pune, India",
+          "project": "NDB_Parkinsons",
+          "projectcode": "154587854NDR",
+          "startdate": "2015-03-22",
+          "enddate": "2015-06-22"
+        },
+        {
+          "lacation": "Magarpatta, Pune, India",
+          "project": "CITI_BANK_RBI",
+          "projectcode": "00547CITIB",
+          "startdate": "2015-06-28",
+          "enddate": "2015-12-31"
         }
       ]
     },
@@ -47,7 +54,7 @@
       "id": 2018201103,
       "name": "Mohammad Siddique",
       "address": "Mahamadwadi, Pune",
-      "profilepicpath": "./assets/profiles/Mohammad_Siddique.jpg",
+      "profilepicpath": "Mohammad_Siddique.jpg",
       "category": "Front-End",
       "doj": "2017-11-05",
       "skills": "Html, share-point, .Net, EDIN",
@@ -70,12 +77,12 @@
     },
     {
       "id": 2018201104,
-      "profilepicpath": "./assets/profiles/Rajib_Ganguly.jpg",
+      "profilepicpath": "Rajib_Ganguly.jpg",
       "name": "Rajib Ganguly",
       "category": "Database",
       "address": "Sai sankul, phursungi, Bhekraonagar",
       "doj": "2111-11-11",
-      "skills": "Skala, cobol",
+      "skills": "Skala, cobol, HTML, CSS",
       "locations": [
         {
           "lacation": "Kharadi, Pune, India",
@@ -95,12 +102,12 @@
     },
     {
       "id": 2018201105,
-      "profilepicpath": "./assets/profiles/Johan_Augestine.jpg",
+      "profilepicpath": "Johan_Augestine.jpg",
       "name": "Johan Augestine",
       "category": "Front-End",
-      "address": "Tripti-Nilay, C/o A.K.Bhattacharya,, East Rabindra palli, Wireless gate",
+      "address": "Tripti-Nilay, C/o A.K.Bhattacharya,, East Rabindra palli, Wireless gate 2",
       "doj": "2014-12-12",
-      "skills": "React JS, HTML5, CSS3, GIT, NodeJS",
+      "skills": "React JS, HTML5, CSS3, GIT, NodeJS, Angular",
       "locations": [
         {
           "lacation": "Kharadi, Pune, India",
@@ -121,11 +128,11 @@
     {
       "id": 2018201106,
       "name": "Fionna Appudas",
+      "profilepicpath": "Fionna_Appudas.jpg",
       "category": "Back-End",
       "address": "Barasaat Road",
-      "skills": "Python, Java, .Net",
-      "profilepicpath": "./assets/profiles/Fionna_Appudas.jpg",
       "doj": "2111-12-11",
+      "skills": "Python, Java, .Net, PHP",
       "locations": [
         {
           "lacation": "Kharadi, Pune, India",
@@ -145,12 +152,12 @@
     },
     {
       "id": 2018201108,
+      "profilepicpath": "Dora_Braitley.jpg",
       "name": "Dora Braitley",
       "category": "Agile",
       "address": "Mousetong hills, coper blog 1, Dedur, Chadigarh",
-      "skills": "Scrum certified, TCM",
-      "profilepicpath": "./assets/profiles/Dora_Braitley.jpg",
       "doj": "2011-12-22",
+      "skills": "Scrum certified",
       "locations": [
         {
           "lacation": "Kharadi, Pune, India",
@@ -171,27 +178,16 @@
     {
       "id": 2018201109,
       "name": "Housse Effle",
+      "profilepicpath": "Housse_Effle.jpg",
       "category": "Agile",
       "address": "Mousetong hills, coper blog 1, Dedur, Chadigarh",
-      "skills": "Scrum certified, TCM",
-      "profilepicpath": "./assets/profiles/Housse_Effle.jpg",
       "doj": "2011-12-22",
-      "locations": [
-        {
-          "lacation": "Bhore, Pune, India",
-          "project": "SD_hollys",
-          "projectcode": "154547854NDR",
-          "startdate": "2015-09-22",
-          "enddate": "2015-09-22"
-        },
-        {
-          "lacation": "Magarpatta, Pune, India",
-          "project": "CITI_BANK_RBI",
-          "projectcode": "00547CITIB",
-          "startdate": "2015-06-28",
-          "enddate": "2015-12-31"
-        }
-      ]
+      "skills": "Scrum certified",
+      "project": "CITI_BANK_RBI",
+      "lacation": "Magarpatta, Pune, India",
+      "projectcode": "00547CITIB",
+      "startdate": "2015-06-28",
+      "enddate": "2015-12-31"
     }
   ]
 }

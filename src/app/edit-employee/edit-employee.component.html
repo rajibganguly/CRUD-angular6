@@ -1,0 +1,53 @@
+<!-- POP UP WINDOW -->
+<div class="rg-modal">
+  <form #editEmployeeForm="ngForm" (ngSubmit)="saveEmployee(editEmployeeForm)">
+  <table class="table table-borderless" *ngFor="let employee of employeeEditLists" style="color:#fff">
+    <tr>
+      <td class="text-right"><strong>Comp ID:</strong></td>
+      <td class="text-left" [(ngModel)]="employee.id" name="id" id="id">{{employee.id}}</td>
+    </tr>
+    <tr>
+      <td class="text-right" [(ngModel)]="employee.name" name="name"><strong>{{employee.name}}</strong></td>
+      <td class="text-left">
+        <img src="./assets/profiles/{{employee.profilepicpath}}" [(ngModel)]="employee.profilepicpath" name="profilepicpath" class="img-thumbnail" alt="name" style="width:200px">
+      </td>
+    </tr>
+    <tr>
+      <td class="text-right"><strong>Category:</strong></td>
+      <td class="text-left" [(ngModel)]="employee.category" name="category">{{employee.category}}</td>
+    </tr>
+    <tr>
+      <td class="text-right"><strong>Address:</strong></td>
+      <td class="text-left"><input type="text" [(ngModel)]="employee.address" name="address" class="form-control" /></td>
+    </tr>
+    <tr>
+      <td class="text-right"><strong>Date of join:</strong></td>
+      <td class="text-left" [(ngModel)]="employee.doj" name="doj">{{employee.doj}}</td>
+    </tr>
+    <tr>
+      <td class="text-right"><strong>Skills:</strong></td>
+      <td class="text-left"><textarea class="form-control" [(ngModel)]="employee.skills" name="skills"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="projdetailscard">
+          <div class="card" *ngFor="let loc of employee.locations">
+              <div class="card-body">
+                <h5 class="card-title" [(ngModel)]="loc.project" name="project">{{loc.project}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted" [(ngModel)]="loc.lacation" name="lacation">Location: {{loc.lacation}}</h6>
+                <p class="card-text" [(ngModel)]="loc.projectcode" name="projectcode"><em>Project code:</em> {{loc.projectcode}}</p>
+                <p class="card-text" [(ngModel)]="loc.startdate" name="startdate"><em>Start Date:</em> {{loc.startdate}}</p>
+                <p class="card-text" [(ngModel)]="loc.enddate" name="enddate"><em>End Date:</em> {{loc.enddate}}</p>
+              </div>
+            </div>
+      </td>
+    </tr>
+    <tr>
+    <td class="text-right"></td>
+      <td class="text-left">
+        <button class="btn btn-outline-light mr-1" type="submit">save</button>
+        <button class="btn btn-outline-warning" (click)="backToHome()">Back</button>
+      </td>
+    </tr>
+  </table>
+</form>
+</div>

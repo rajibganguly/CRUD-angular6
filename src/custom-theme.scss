@@ -40,3 +40,24 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     }
   }
 }
+
+.projdetailscard {
+  .card {
+    width: 17em;
+    color: #333;
+    float: left;
+    height: 17em;
+    background: rgba(255,255,255,0.5);
+    p {
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+  .card:last-child {
+    width: 17em;
+    color: #333;
+    float: left;
+    height: 17em;
+    background: rgba(255,255,255,1);
+  }
+}

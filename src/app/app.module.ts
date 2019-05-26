@@ -15,6 +15,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatInputModule } from '@angular/material';
     HomeComponent,
     HeaderComponent,
     NewEmployeeComponent,
-    SearchComponent
+    SearchComponent,
+    EditEmployeeComponent
   ],
   imports: [
     BrowserModule,

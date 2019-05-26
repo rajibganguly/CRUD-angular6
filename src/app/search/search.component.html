@@ -6,7 +6,7 @@
         <input matInput placeholder="Search for employee name" aria-label="State" [matAutocomplete]="auto" [formControl]="stateCtrl">
         <mat-autocomplete #auto="matAutocomplete">
           <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
-            <img class="rounded-circle" aria-hidden [src]="state.profilepicpath" height="40">
+            <img class="rounded-circle" aria-hidden src="./assets/profiles/{{state.profilepicpath}}" height="40">
             <span> <strong> {{state.name}}</strong></span>
             <small class="text-success"> | &#8594; {{state.skills}}</small>
           </mat-option>
@@ -22,7 +22,7 @@
         <th>Location Records</th>
       </tr>
       <tr *ngFor="let x of searchResults">
-        <td><img [src]="x.profilepicpath" alt="name" style="height:50px" class="rounded-circle"></td>
+        <td><img src="./assets/profiles/{{x.profilepicpath}}" alt="name" style="height:50px" class="rounded-circle"></td>
         <td>
           <strong>{{x.name}}</strong><br/>
           <small>{{x.address}}</small>

@@ -11,8 +11,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit, OnDestroy {
   employeeLists = [];
-  employeeEditLists = [];
-  addressInput = false;
+
   constructor(private appService: AppService, private router: Router) { }
 
   ngOnInit() {
@@ -25,28 +24,15 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
 
-  editEmployee(x): void {
-    this.employeeEditLists = [];
-    this.addressInput = true;
-    this.employeeEditLists.push(x);
+  editThisEmployee(x: any) {
+    this.appService.editExistingEmpArray(x);
+    this.router.navigate(['/edit']);
   }
 
   deleteEmployee(delId: number) {
     this.appService.deleteEmployeePerm(delId);
   }
 
-  saveEmployee(x) {
-    // console.log(x.value);
-    this.appService.editEmployee(x.value).subscribe((data)=> {
-      // console.log(data);
-      location.reload();
-    },
-    (error) => console.log(error));
-  }
 
-  returnToHome() {
-    alert('No new data to save!');
-    this.router.navigate(['/']);
-  }
 
 }
