@@ -1,3 +1,10 @@
+<div *ngIf = "display">
+  <app-atom-spinner
+    [animationDuration]="500"
+    [size]="100"
+    [color]="'#70ACDA'">
+  </app-atom-spinner>
+</div>
 <!-- POP UP WINDOW -->
 <div class="rg-modal">
   <form #editEmployeeForm="ngForm" (ngSubmit)="saveEmployee(editEmployeeForm)">

@@ -11,12 +11,15 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit, OnDestroy {
   employeeLists = [];
+  display = false;
 
   constructor(private appService: AppService, private router: Router) { }
 
   ngOnInit() {
+    this.display = true;
     return this.appService.getEmployee().subscribe((data: Employee[]) => {
       this.employeeLists = data;
+      this.display = false;
     });
   }
 

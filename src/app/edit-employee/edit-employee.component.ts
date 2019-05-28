@@ -12,6 +12,7 @@ import { Subscription } from 'rxjs';
 })
 export class EditEmployeeComponent implements OnInit {
   employeeEditLists = [];
+  display = true;
   subscription: Subscription;
 
   constructor(private appService: AppService, private router: Router) {
@@ -27,11 +28,13 @@ export class EditEmployeeComponent implements OnInit {
   }
 
   saveEmployee(x: any) {
+    this.display = true;
     this.appService.editEmployee(this.employeeEditLists[0]).subscribe((data) => {
-      console.log(data);
+      this.display = false;
       this.router.navigate(['/']);
     },
     (error) => console.log(error));
+    this.display = true;
   }
 
   backToHome() {

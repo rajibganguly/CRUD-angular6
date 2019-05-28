@@ -17,6 +17,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 
+import { AtomSpinnerModule } from 'angular-epic-spinners';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +33,7 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    AtomSpinnerModule,
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
