@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 
 import { AtomSpinnerModule } from 'angular-epic-spinners';
+import { ViewComponent } from './view/view.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { AtomSpinnerModule } from 'angular-epic-spinners';
     HeaderComponent,
     NewEmployeeComponent,
     SearchComponent,
-    EditEmployeeComponent
+    EditEmployeeComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,

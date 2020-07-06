@@ -1,0 +1,57 @@
+<div *ngIf = "display">
+  <app-atom-spinner
+    [animationDuration]="500"
+    [size]="100"
+    [color]="'#70ACDA'">
+  </app-atom-spinner>
+</div>
+<!-- POP UP WINDOW -->
+
+
+<div class="container">
+  <h1>New Employees Details</h1>
+  <div class="row mt-4">
+    <div class="col-12">
+      
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <img class="card-img-top" src="./assets/profiles/{{allGetData.profilepicpath}}" alt="Card image cap" style="margin:5px;">
+          
+          </div>
+          <div class="col-md-9 col-sm-6 col-xs-12">
+            <div class="card-body">
+            <h5 class="card-title">{{allGetData.name}}</h5>
+            <p class="card-text">{{allGetData.address}}</p>
+            <a class="btn btn-dark btn-lg text-white" (click)="editModeOn(allGetData)">I Wanna Edit this!</a>
+          </div>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Category: </strong> <span>{{allGetData.category}}</span>
+          </li>
+          <li class="list-group-item">
+            <strong>Skills: </strong> <span>{{allGetData.skills}}</span>
+          </li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div>
+          <h5 class="m-4">All assignments</h5>
+          <div *ngFor="let x of allGetData.locations" class="new-project-box">
+            <div class="title">{{x.project}}</div>
+            <p>CODE: <small>{{x.projectcode}}</small></p>
+            <p>{{x.lacation}}</p>
+            <p>{{x.startdate}}</p>
+            <p>{{x.enddate}}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+

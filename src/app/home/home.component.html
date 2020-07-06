@@ -15,7 +15,7 @@
           <th>Category</th>
           <th>Skills</th>
           <th>Date of Join</th>
-          <th>Edit</th>
+          <th>View</th>
           <th>Delete</th>
         </tr>
         <tr *ngFor="let x of employeeLists">
@@ -28,7 +28,7 @@
           <td>{{x.category}}</td>
           <td class="comma">{{x.skills}}</td>
           <td>{{x.doj}}</td>
-          <td><button class="btn btn-outline-dark" (click)="editThisEmployee(x)">Edit</button></td>
+          <td><button class="btn btn-outline-dark" (click)="editThisEmployee(x)">View</button></td>
           <td><button class="btn btn-outline-danger" (click)="deleteEmployee(x.id)">Delete</button></td>
         </tr>
       </table>

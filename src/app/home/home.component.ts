@@ -28,8 +28,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
 
   editThisEmployee(x: any) {
-    this.appService.editExistingEmpArray(x);
-    this.router.navigate(['/edit']);
+    this.router.navigate(['/view',x.id]);
   }
 
   deleteEmployee(delId: number) {

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppService } from './../app.service';
-import { Employee } from '../employee/employee.module';
+import { Employee, Location } from '../employee/employee.module';
+
+import { FormGroup, Validator, FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-new-employee',
@@ -11,30 +13,44 @@ import { Employee } from '../employee/employee.module';
 export class NewEmployeeComponent implements OnInit {
   private heroForm: any[];
   private holdingValueEmployee: any[] = [];
-  constructor(private router: Router, private appService: AppService) { }
+  createEmployeeDetails: FormGroup;
+  // learn from  https://www.youtube.com/watch?v=qNsFvwlzhDs
+
+  constructor(private router: Router, private appService: AppService, private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.createEmployeeDetails = this.fb.group({
+      name: [''],
+      address: [''],
+      category: [''],
+      skills: [''],
+      imagepath: [''],
+      doj: [''],
+      locations: this.fb.array([
+        this.addlocationFormGroup()
+      ])
+    })
   }
 
-  saveNewEmployee(empFd: any): void {
-    const emp = empFd.value;
-    const employee = {
-      id: null,
-      name: emp.name,
-      category: emp.category,
-      address: emp.address,
-      skills: [emp.skills],
-      profilepicpath: emp.path,
-      doj: emp.doj
-    }
-    this.holdingValueEmployee = [];
-    this.holdingValueEmployee.push(employee);
-    this.appService.saveEmployee(employee).subscribe((data: Employee) => {
-      console.log(data);
-      this.router.navigate(['/']);
-    },
-    (error) => console.log(error)
-    );
+  addlocationFormGroup(): FormGroup {
+    return this.fb.group({
+      enddate: [''],
+      lacation: [''],
+      project: [''],
+      projectcode: [''],
+      startdate: ['']
+    })
+  }
+
+  
+
+  saveNewEmployee(empFd: Employee[]): void {
+    const emp = empFd['value'];
+    console.log(emp);
+    // this.holdingValueEmployee = [];
+    // this.holdingValueEmployee.push(emp);
+    this.appService.saveEmployee(emp);
+    this.router.navigate(['/']);
   }
 
   returnToHome() {

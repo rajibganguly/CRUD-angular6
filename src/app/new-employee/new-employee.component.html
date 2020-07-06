@@ -1,51 +1,72 @@
+<div class="container">
 <h1>New Employees Details</h1>
-<form (ngSubmit)="saveNewEmployee(employeeLists)" #employeeLists="ngForm">
-  <table class="table">
-    <tr>
-      <td class="text-right"><strong>Comp ID:</strong></td>
-      <td class="text-left">ComapanyID i.e.XXX</td>
-    </tr>
-    <tr>
-      <td class="text-right"><strong>Image path:</strong></td>
-      <td><input type="text" ngModel="" class="form-control" name="path" placeholder="Enter path image" /></td>
-    </tr>
-    <tr>
-      <td class="text-right"><strong>Name:</strong></td>
-      <td class="text-left"><input type="text" ngModel="" class="form-control" name="name" placeholder="Enter name"  /></td>
-    </tr>
-    <tr>
-      <td class="text-right"><strong>Category:</strong></td>
-      <td class="text-left">
-        <select ngModel="" class="form-control" name="category" placeholder="Select your category">
-          <option selected="selected" value="" disabled>Select your category</option>
-          <option value="Back-End">Back-End</option>
-          <option value="Front-End">Front-End</option>
-          <option value="Office">Office</option>
-          <option value="Database">Database</option>
-          <option value="Agile">Agile</option>
-          <option value="Manager">Manager</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td class="text-right"><strong>Address:</strong></td>
-      <td class="text-left"><input type="text" ngModel="" class="form-control" name="address" placeholder="Enter Address" /></td>
-    </tr>
-    <tr>
-      <td class="text-right"><strong>Date of join:</strong></td>
-      <td class="text-left"><input type="date" ngModel="" class="form-control" name="doj" pattern="DD-MM-YYYY" placeholder="Enter Date of Join" /></td>
-    </tr>
-    <tr>
-      <td class="text-right"><strong>Skills:</strong></td>
-      <td class="text-left"><input type="text" ngModel="" class="form-control" name="skills" placeholder="Enter skills" /></td>
-    </tr>
-    <tr>
-    <td class="text-right"></td>
-      <td class="text-left">
-        <button class="btn btn-outline-dark mr-1" type="submit">Add New Employee</button>
-        <button class="btn btn-outline-dark" (click)="returnToHome()">Return</button>
-      </td>
-    </tr>
-  </table>
-</form>
+<div class="row">
+  <div class="col-12">
+    <form [formGroup]="createEmployeeDetails" (ngSubmit)="saveNewEmployee(createEmployeeDetails)" novalidate>
+      <table class="form-group table table-borderless text-white w-100">
+        <tr>
+          <td class="text-right text-dark"><strong>Comp ID:</strong></td>
+          <td class="text-left text-dark">ComapanyID i.e.XXX Default create</td>
+        </tr>
+        <tr>
+          <td class="text-right text-dark"><strong>Image path:</strong></td>
+          <td><input type="text" formControlName="imagepath" class="form-control" name="imagepath" placeholder="Enter path image" /></td>
+        </tr>
+        <tr>
+          <td class="text-right text-dark"><strong>Name:</strong></td>
+          <td class="text-left"><input type="text" formControlName="name" class="form-control" name="name" placeholder="Enter name"  /></td>
+        </tr>
+        <tr>
+          <td class="text-right text-dark"><strong>Category:</strong></td>
+          <td class="text-left">
+            <select formControlName="category" class="form-control" name="category" placeholder="Select your category">
+              <option selected="selected" value="" disabled>Select your category</option>
+              <option value="Back-End">Back-End</option>
+              <option value="Front-End">Front-End</option>
+              <option value="Office">Office</option>
+              <option value="Database">Database</option>
+              <option value="Agile">Agile</option>
+              <option value="Manager">Manager</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-right text-dark"><strong>Address:</strong></td>
+          <td class="text-left"><input type="text" formControlName="address" class="form-control" name="address" placeholder="Enter Address" /></td>
+        </tr>
+        <tr>
+          <td class="text-right text-dark"><strong>Date of join:</strong></td>
+          <td class="text-left"><input type="date" formControlName="doj" class="form-control" name="doj" pattern="DD-MM-YYYY" placeholder="Enter Date of Join" /></td>
+        </tr>
+        <tr>
+          <td class="text-right text-dark"><strong>Skills:</strong></td>
+          <td class="text-left"><input type="text" formControlName="skills" class="form-control" name="skills" placeholder="Enter skills" /></td>
+        </tr>
+        <tr class="bg-light">
+          <td class="text-right text-dark"><strong>Projects:</strong></td>
+          <td class="text-left" formArrayName="locations">
+            <div formGroupName="0">
+              <p><input type="text" formControlName="project" class="form-control" name="project" placeholder="Enter project name" /></p>
+            <p><input type="text" formControlName="projectcode" class="form-control" name="projectcode" placeholder="Enter project code you received" /></p>
+            <p><input type="text" formControlName="lacation" class="form-control" name="lacation" placeholder="Enter client location address" /></p>
+            <p><input type="date" formControlName="startdate" class="form-control" name="startdate" placeholder="Enter start date" /></p>
+            <p><input type="date" formControlName="enddate" class="form-control" name="enddate" placeholder="Enter end date" /></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+        <td class="text-right text-dark"></td>
+          <td class="text-left">
+            <button class="btn btn-outline-dark mr-1" type="submit">Add New Employee</button>
+            <button class="btn btn-outline-dark" (click)="returnToHome()">Return</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+</div>
+
+
 

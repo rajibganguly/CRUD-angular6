@@ -3,9 +3,10 @@
 
 $model-bg: #70ACDA
 $white: #FFFFFF
+$black: #000000
 
 body
-  background: darken($white, 5%)
+  background: darken($white, 1%)
   .container
     background: $white
     table
@@ -46,6 +47,29 @@ body
     table
       td
         padding: 4px
+  .new-project-box
+    float: left;
+    width: 200px;
+    padding: 10px;
+    color: $white;
+    line-height: 10px;
+    .title
+      font-size: 1.5rem;
+      padding: 11px 0;
+  .new-project-box:nth-child(n)
+    background: rgba(0,0,0,0.5);
+  .new-project-box:nth-child(2n)
+    background: rgba(0,0,0,1);
+  .moreplace-bx
+    width: 300px;
+    border: 1px solid #fff;
+    padding: 10px;
+    float: left;
+    p
+      padding: 0;
+      margin: 0;
+
+ 
 
 
 

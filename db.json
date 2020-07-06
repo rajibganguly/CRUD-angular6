@@ -10,18 +10,18 @@
       "skills": "Html, Css, Javascript, Node, Angular 2+",
       "locations": [
         {
+          "enddate": "2015-06-22",
           "lacation": "Kharadi, Pune, India",
-          "project": "NDB_Parkinsons",
+          "project": "154587854NDR",
           "projectcode": "154587854NDR",
-          "startdate": "2015-03-22",
-          "enddate": "2015-06-22"
+          "startdate": "2015-03-22"
         },
         {
+          "enddate": "2015-12-31",
           "lacation": "Magarpatta, Pune, India",
-          "project": "CITI_BANK_RBI",
+          "project": "00547CITIB",
           "projectcode": "00547CITIB",
-          "startdate": "2015-06-28",
-          "enddate": "2015-12-31"
+          "startdate": "2015-06-28"
         }
       ]
     },
@@ -35,18 +35,18 @@
       "skills": "Excel, MS-Office, Powerpoint, DOSX",
       "locations": [
         {
+          "enddate": "2015-06-22",
           "lacation": "Kharadi, Pune, India",
-          "project": "NDB_Parkinsons",
+          "project": "154587854NDR",
           "projectcode": "154587854NDR",
-          "startdate": "2015-03-22",
-          "enddate": "2015-06-22"
+          "startdate": "2015-03-22"
         },
         {
+          "enddate": "2015-12-31",
           "lacation": "Magarpatta, Pune, India",
-          "project": "CITI_BANK_RBI",
+          "project": "00547CITIB",
           "projectcode": "00547CITIB",
-          "startdate": "2015-06-28",
-          "enddate": "2015-12-31"
+          "startdate": "2015-06-28"
         }
       ]
     },
@@ -77,26 +77,32 @@
     },
     {
       "id": 2018201104,
-      "profilepicpath": "Rajib_Ganguly.jpg",
       "name": "Rajib Ganguly",
+      "address": "176/4 hind colony, phursungi, Bhekrai Nagar Pune-412308",
+      "profilepicpath": "Rajib_Ganguly.jpg",
       "category": "Database",
-      "address": "Sai sankul, phursungi, Bhekraonagar",
-      "doj": "2111-11-11",
       "skills": "Skala, cobol, HTML, CSS",
       "locations": [
         {
+          "enddate": "2017-06-22",
           "lacation": "Kharadi, Pune, India",
-          "project": "NDB_Parkinsons",
+          "project": "154587854NDR",
           "projectcode": "154587854NDR",
-          "startdate": "2015-03-22",
-          "enddate": "2015-06-22"
+          "startdate": "2015-03-22"
         },
         {
+          "enddate": "2019-12-31",
           "lacation": "Magarpatta, Pune, India",
-          "project": "CITI_BANK_RBI",
+          "project": "00547CITIB",
           "projectcode": "00547CITIB",
-          "startdate": "2015-06-28",
-          "enddate": "2015-12-31"
+          "startdate": "2017-07-28"
+        },
+        {
+          "enddate": "2020-12-31",
+          "lacation": "Mumbai, India",
+          "project": "154MS",
+          "projectcode": "154MS",
+          "startdate": "2020-01-22"
         }
       ]
     },
@@ -130,7 +136,7 @@
       "name": "Fionna Appudas",
       "profilepicpath": "Fionna_Appudas.jpg",
       "category": "Back-End",
-      "address": "Barasaat Road",
+      "address": "Barasaat Road, pl",
       "doj": "2111-12-11",
       "skills": "Python, Java, .Net, PHP",
       "locations": [
@@ -157,7 +163,7 @@
       "category": "Agile",
       "address": "Mousetong hills, coper blog 1, Dedur, Chadigarh",
       "doj": "2011-12-22",
-      "skills": "Scrum certified",
+      "skills": "Scrum certified, AGILE TTE",
       "locations": [
         {
           "lacation": "Kharadi, Pune, India",
